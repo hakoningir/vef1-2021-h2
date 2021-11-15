@@ -1,0 +1,30 @@
+{
+  "name": "vef1-2021-h2",
+  "version": "1.0.0",
+  "description": "[Kynning í fyrirlestri](https://youtu.be/Alsi_j6skHY)",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "sass": "node-sass styles.scss styles.css -w",
+    "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "lint": "stylelint styles.scss --syntax scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelSverrisson/vef1-2021-h2.git"
+  },
+  "author": "Michael Þór",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelSverrisson/vef1-2021-h2/issues"
+  },
+  "homepage": "https://github.com/MichaelSverrisson/vef1-2021-h2#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "stylelint": "^14.1.0",
+    "stylelint-config-primer": "^11.1.1"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "sass": "^1.43.4",
+    
