@@ -1,0 +1,6 @@
+{
+    "extends": "stylelint-config-primer"
+    "rules": {
+        "comment-no-empty": true
+    }
+}
