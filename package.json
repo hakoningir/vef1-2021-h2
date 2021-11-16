@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MichaelSverrisson/vef1-2021-h2.git"
+    "url": "git+https://github.com/hakoningir/vef1-2021-h2.git"
   },
   "author": "Michael Þór",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MichaelSverrisson/vef1-2021-h2/issues"
+    "url": "https://github.com/hakoningir/vef1-2021-h2/issues"
   },
-  "homepage": "https://github.com/MichaelSverrisson/vef1-2021-h2#readme",
+  "homepage": "https://github.com/hakoningir/vef1-2021-h2#readme",
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "stylelint": "^14.1.0",
