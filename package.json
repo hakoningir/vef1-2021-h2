@@ -2,9 +2,9 @@
   "name": "vef1-2021-h2",
   "version": "1.0.0",
   "description": "[Kynning í fyrirlestri](https://youtu.be/Alsi_j6skHY)",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "browser-sync": "browser-sync start --server --files main.js **/*.js styles.css index.html",
     "sass": "node-sass styles.scss styles.css -w",
     "dev": "concurrently npm:sass-watch npm:browser-sync",
     "lint": "stylelint styles.scss --syntax scss"
