@@ -34,11 +34,11 @@ margin-bottom: 0.5em; }
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 100%;
-    gap: var(--gutter);
+    /*gap: 30px;*/
     
     margin: 0 auto;
-    width: calc(100% - (2 * var(--offset)));
-    max-width: var(--max-width);
+    width: calc(100% - (2 * 20px));
+    max-width: 1400px;
 }
 
 main{
