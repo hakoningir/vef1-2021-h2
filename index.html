@@ -58,7 +58,6 @@
 
                 <div class="yfirlit">
                     <section class="radaEftir">
-                        <h3>Raða eftir:...valmoguleikar(dagsetning)</h3>
                         <label for="velja">Raða eftir:</label>
                         <select id="velja" name="velja">
                             <option value="">Dagsetning</option>
@@ -68,20 +67,27 @@
                     </section>
                     <section class="task">
                         <div class="checkbox">
-                            <h3>(checkbox) -> o Titill á task</h3>
-                            <a>Lýsing á verkefni, ef einhver</a>
-                            <p>10 nóv [Tag] [Tag] [Tag] Flokkur</p>
-                        </div>
-                        <div class="checkbox">
-                            <h3>(checkbox) -> o Titill á task</h3>
-                            <a>Lýsing á verkefni, ef einhver</a>
-                            <p>10 nóv [Tag] [Tag] [Tag] Flokkur</p>
-                        </div>
-                    </section>
-                    <section class="baetaVid">
-                        <a>(plus-checkbox) Bæta við verkefni</a>
-                        <p>(plus-checkbox) Bæta við verkefni</p>
-                    </section>
+                            <label>
+                                <input name="titill" type="radio" value="category">
+                                <h3>Titill á task</h3>
+                                <a>Lýsing á verkefni, ef einhver</a>
+                                <p>10 nóv [Tag] [Tag] [Tag] Flokkur</p>
+                            </label>
+                            <label>
+                                <input name="titill" type="radio" value="category">
+                                <h3>Titill á task</h3>
+                                <a>10 nóv [Tag] [Tag] [Tag] Flokkur</a>
+                            </label>
+                            <details>
+                                <summary>Bæta við verkefni</summary>
+                                <p>shit sem a að koma fram fra þessu shitti</p>
+                            </details>
+                            <section class="baetaVid">
+                                <details>
+                                    <summary>Bæta við verkefni</summary>
+                                    <p>shit sem a að koma fram fra þessu shitti</p>
+                                </details>
+                            </section>
 
                 </div>
             </div>
