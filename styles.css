@@ -11,12 +11,28 @@ font-family:'Courier New', Courier, monospace;
 margin-left: 10px;
 margin-right: 10px; }
 
-h1 {
-    font-size: 3.5rem;
+header h1 {
+    font-size: 1rem;
     line-height: 1;
     font-variation-settings: 'wght' 600;
 }
-    
+@media (min-width: 1000px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+/*
+ef vafri styður clamp, notum það til að skala línulega, annars er 2rem <800px
+og með media query að ofan farið í 4rem í >=800px
+*/
+/*
+@supports (font-size: 2rem) {
+    header h1 {
+      font-size: clamp(2rem, 16px + 4vw, 4rem);
+    }
+  }
+    */
 h1,
 h2,
 p {
@@ -43,7 +59,6 @@ margin-bottom: 0.5em; }
 
 main{
     padding: 1em;
-    text-align: center; 
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 100%;
@@ -59,6 +74,7 @@ h1{
     margin-right: -15px;
     margin-top: 3rem;
 }
+/*
 .valmynd{
     display:flex;
     flex-direction: column;
@@ -72,5 +88,42 @@ h1{
     float:center;
     margin-right: 16rem;
     line-height: 2rem;
+}*/
+
+
+/* Valmynd og Yfirlit */
+@media (min-width: 400px){
+    .valmynd-yfirlit{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+    }
+    .valmynd{
+        grid-column: 1/span 3;
+    }
+    .yfirlit{
+        grid-column: 6/span 3;
+    }
 }
 
+@media (min-width: 1000px){
+    .valmynd{
+        grid-column: 1/span 4;
+    }
+    .yfirlit{
+        grid-column: 5/span 4;
+    }
+    .valmynd-efni{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .valmynd-efni-svaedi{
+        grid-column: span 1;
+    }
+}
+
+/* Valmynd */
+
+/* Yfirlit*/
