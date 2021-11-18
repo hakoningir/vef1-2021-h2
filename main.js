@@ -1,5 +1,5 @@
 import { fetchList } from "./lib/todolist.js"
-
+import { fetchAndRenderList } from "./lib/ui.js";
 
 
 
@@ -18,8 +18,12 @@ function route(){
     console.log(jsonstring);
     
 }
-route()
 
+function test(){
+    let test = fetchList();
+    console.log(test);
+}
+test()
 console.log(await fetchList())
 /*try{
     let data = JSON.parse(myStorage.getItem('testLocalKey'));
