@@ -1,4 +1,4 @@
-import { fetchList } from "./lib/todolist.js"
+import { fetchList, saveList } from "./lib/todolist.js"
 import { fetchAndRenderList } from "./lib/ui.js";
 
 
@@ -16,7 +16,7 @@ function route(){
     localStorage.removeItem("test");
     jsonstring = myStorage.getItem("test");
     console.log(jsonstring);
-    
+    saveList(); //alltaf þegar sótt er ný gögn úr localStorage þarf að savea.
 }
 
 function test(){
