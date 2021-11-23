@@ -1,4 +1,4 @@
-import { fetchList, saveList } from "./lib/todolist.js"
+import { getList, saveList, fetchList } from "./lib/todolist.js"
 import { fetchAndRenderList } from "./lib/ui.js";
 
 
@@ -28,7 +28,9 @@ function test(){
 }
 test1()
 test()
-console.log(await fetchList())
+console.log(await getList());
+console.log(await getList('category', 'vefforrit'));
+console.log(await getList('tags', 'fundir'));
 /*try{
     let data = JSON.parse(myStorage.getItem('testLocalKey'));
     console.log("data", data.testKey);
