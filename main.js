@@ -4,6 +4,7 @@ import { fetchAndRenderList } from "./lib/ui.js";
 
 
 function route(){
+    fetchAndRenderList();
     const loc = new URLSearchParams(window.location.search);
     const newLoc = loc.get('valmynd'); //er það samt?
     console.log(newLoc)
@@ -21,8 +22,11 @@ function route(){
 
 function test(){
     let test = fetchList();
+    let test1 = route();
     console.log(test);
+    console.log(test1);
 }
+test1()
 test()
 console.log(await fetchList())
 /*try{
