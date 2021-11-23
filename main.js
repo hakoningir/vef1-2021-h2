@@ -4,33 +4,30 @@ import { fetchAndRenderList } from "./lib/ui.js";
 
 
 function route(){
-    fetchAndRenderList();
+    const container = document.querySelector(".task")
+    fetchAndRenderList("id", container);
+    /*const valmynd = document.querySelector(".valmynd")
+    fetchAndRenderList("valmynd", valmynd);
+    Spurning hvort ég geti gert þetta alveg eins held að ég fái sama dæmi bara tvisvar og þurfi að updatea fetchandrenderlist frekar*/
     const loc = new URLSearchParams(window.location.search);
     const newLoc = loc.get('valmynd'); //er það samt?
-    console.log(newLoc)
     const myStorage = window.localStorage;
     var test = {"id": 0,
         "tester": "testerval"};
     myStorage.setItem("test", JSON.stringify(test));
     var jsonstring = myStorage.getItem("test");
-    console.log(jsonstring);
     localStorage.removeItem("test");
     jsonstring = myStorage.getItem("test");
-    console.log(jsonstring);
-    saveList(); //alltaf þegar sótt er ný gögn úr localStorage þarf að savea.
 }
 
-function test(){
-    let test = fetchList();
+async function test(){
+    let test = await fetchList();
     let test1 = route();
-    console.log(test);
-    console.log(test1);
-}
-test1()
+} 
 test()
-console.log(await getList());
+/*console.log(await getList());
 console.log(await getList('category', 'vefforrit'));
-console.log(await getList('tags', 'fundir'));
+console.log(await getList('tags', 'fundir'));*/
 /*try{
     let data = JSON.parse(myStorage.getItem('testLocalKey'));
     console.log("data", data.testKey);
