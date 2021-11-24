@@ -21,7 +21,15 @@ function route(){
     localStorage.removeItem("test");
     jsonstring = myStorage.getItem("test");
 }
+let addTodoButton = document.getElementById('addTodo');
+let todocontainer= documnet.getElementById('toDocontainer');
+let inputField = document.getElementById('inputfield');
 
+addTodoButton.addEventListener('click', function(){
+    var paragraph = document.createElement('p');
+    paragraph.innerText=inputField.Value; 
+    todocontainer.appendChild(paragraph);
+})
 async function test(){
     let test = await fetchList();
     let test1 = route();

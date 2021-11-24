@@ -123,10 +123,10 @@ h1{
         grid-column: span 1;
     }
 }
-#addTodo{
-    background-color: #04AA6D;
+/*#addTodo{
+
   border: none;
-  color: white;
+  color: black;
   padding: 20px;
   text-align: center;
   text-decoration: none;
