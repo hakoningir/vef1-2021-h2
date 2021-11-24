@@ -1,13 +1,12 @@
-import { getList, saveList, fetchList } from "./lib/todolist.js"
-import {  fetchAndRenderList, getCategory } from "./lib/ui.js";
+import { fetchList } from "./lib/todolist.js"
+import { fetchAndRenderList } from "./lib/ui.js";
 
 
 
 function route(){
     const container = document.querySelector(".task")
     fetchAndRenderList(container);
-    const newshit = document.querySelector('valmynd-efni-svaedi')
-    getCategory(newshit);
+  
     /*const extra = document.querySelector(".baetaVid")
     addToList(extra)
     const valmynd = document.querySelector(".valmynd")
@@ -24,7 +23,7 @@ function route(){
     jsonstring = myStorage.getItem("test");
 }
 let addTodoButton = document.getElementById('addTodo');
-let todocontainer= documnet.getElementById('toDocontainer');
+let todocontainer= document.getElementById('toDocontainer');
 let inputField = document.getElementById('inputfield');
 
 addTodoButton.addEventListener('click', function(){
