@@ -29,6 +29,7 @@ test()
 /*console.log(await getList());
 console.log(await getList('category', 'vefforrit'));
 console.log(await getList('tags', 'fundir'));*/
+
 /*try{
     let data = JSON.parse(myStorage.getItem('testLocalKey'));
     console.log("data", data.testKey);
