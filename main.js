@@ -1,14 +1,16 @@
 import { getList, saveList, fetchList } from "./lib/todolist.js"
-import { addToList, fetchAndRenderList } from "./lib/ui.js";
+import {  fetchAndRenderList, getCategory } from "./lib/ui.js";
 
 
 
 function route(){
     const container = document.querySelector(".task")
     fetchAndRenderList(container);
-    const extra = document.querySelector(".baetaVid")
+    const newshit = document.querySelector('valmynd-efni-svaedi')
+    getCategory(newshit);
+    /*const extra = document.querySelector(".baetaVid")
     addToList(extra)
-    /*const valmynd = document.querySelector(".valmynd")
+    const valmynd = document.querySelector(".valmynd")
     fetchAndRenderList("valmynd", valmynd);
     Spurning hvort ég geti gert þetta alveg eins held að ég fái sama dæmi bara tvisvar og þurfi að updatea fetchandrenderlist frekar*/
     const loc = new URLSearchParams(window.location.search);
@@ -33,7 +35,6 @@ addTodoButton.addEventListener('click', function(){
 async function test(){
     let test = await fetchList();
     let test1 = route();
-    let test2 = addToList();
 } 
 test()
 /*console.log(await getList());
