@@ -1,11 +1,13 @@
 import { getList, saveList, fetchList } from "./lib/todolist.js"
-import {  fetchAndRenderList } from "./lib/ui.js";
+import {  fetchAndRenderList, getCategory } from "./lib/ui.js";
 
 
 
 function route(){
     const container = document.querySelector(".task")
     fetchAndRenderList(container);
+    const newshit = document.querySelector('valmynd-efni-svaedi')
+    getCategory(newshit);
     /*const extra = document.querySelector(".baetaVid")
     addToList(extra)
     const valmynd = document.querySelector(".valmynd")
