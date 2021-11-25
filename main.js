@@ -1,14 +1,12 @@
-import { fetchList } from "./lib/todolist.js"
-import { fetchAndRenderList, category } from "./lib/ui.js";
+import { fetchList, getList } from "./lib/todolist.js"
+import { fetchAndRender, fetchAndRenderList } from "./lib/ui.js";
 
 
 
 function route(){
     const container = document.querySelector(".task");
-    fetchAndRenderList(container);
-    const showCategory = document.querySelector(".valmynd-efni-svaedi");
-    category(showCategory);
-    console.log(showCategory)
+    const showCategory = document.querySelector(".valmynd-efni");
+    console.log(fetchAndRender('all', null, container), "isnice");
     /*const extra = document.querySelector(".baetaVid")
     addToList(extra)
     const valmynd = document.querySelector(".valmynd")
@@ -33,9 +31,17 @@ function route(){
 //     paragraph.innerText=inputField.Value; 
 //     todocontainer.appendChild(paragraph);
 // })
+
 async function test(){
     let test = await fetchList();
     let test1 = route();
+    // console.log("Hello")
+    // let listi = getList()
+    // let fjoldi = listi.getLength;
+    // console.log(fjoldi)
+    // console.log(getList())
+    // console.log("goodbye")
+
 } 
 test()
 /*console.log(await getList());
