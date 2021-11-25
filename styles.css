@@ -78,7 +78,6 @@ og með media query að ofan farið í 4rem í >=800px
     */
 h1,
 h2,
-th,
 p {
     font-family:"Courier New", Courier, monospace;
 /*
@@ -183,5 +182,28 @@ header h1{
 }
 
 /* Valmynd */
+.ul{
+    border-color: inherit;
+
+}
+.li{
+    position: relative;
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    /*text-align: -webkit-match-parent;
+    */
+}
+.a{
+    width:50px;
+    padding:0;
+    position: absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 2;
+}
+
 
 /* Yfirlit*/
