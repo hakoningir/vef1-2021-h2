@@ -41,7 +41,6 @@ addTodoButton.addEventListener('click', function(){
     // Event listener á takkanum triggerar function sem save-ar gögn í localStorage.
 })
 
-=======
 // let addTodoButton = document.getElementById('addTodo');
 // let todocontainer= document.getElementById('toDocontainer');
 // let inputField = document.getElementById('inputfield');
