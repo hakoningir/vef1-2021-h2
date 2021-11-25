@@ -169,5 +169,8 @@ header h1{
 }
 
 /* Valmynd */
-
+.valmynd-efni-svaedi{
+    display: flex;
+    justify-content: space-between;
+}
 /* Yfirlit*/
