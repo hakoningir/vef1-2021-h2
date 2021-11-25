@@ -1,14 +1,13 @@
-import { fetchList } from "./lib/todolist.js"
-import { fetchAndRenderList, category } from "./lib/ui.js";
+import { fetchList, getList } from "./lib/todolist.js"
+import { fetchAndRender, fetchAndRenderList } from "./lib/ui.js";
+import { el } from './lib/helpers.js';
 
 
 
 function route(){
     const container = document.querySelector(".task");
-    fetchAndRenderList(container);
-    const showCategory = document.querySelector(".valmynd-efni-svaedi");
-    category(showCategory);
-    console.log(showCategory)
+    const showCategory = document.querySelector(".valmynd-efni");
+    console.log(fetchAndRender('all', null, container), "isnice");
     /*const extra = document.querySelector(".baetaVid")
     addToList(extra)
     const valmynd = document.querySelector(".valmynd")
@@ -24,6 +23,24 @@ function route(){
     localStorage.removeItem("test");
     jsonstring = myStorage.getItem("test");
 }
+let addTodoButton = document.getElementById('addTodo');
+let todocontainer= document.getElementById('toDocontainer');
+
+
+addTodoButton.addEventListener('click', function(){
+    //var paragraph = document.createElement('p');
+    //paragraph.innerText=inputField.Value; 
+    //todocontainer.appendChild(paragraph);
+    console.log('hæ');
+    const addTask = el('form', el('p', 'Halló þetta er kúl'));
+    todocontainer.appendChild(addTask);
+
+    // Búa til form með nafni á vekefni, lýsingu, dagsetningu, flokkum og tags.
+    // Þarf að sækja flokka og tags úr localstorage til að birta rétta flokka
+    // Síðasta HTML element er takki sem "submittar" forminu. 
+    // Event listener á takkanum triggerar function sem save-ar gögn í localStorage.
+})
+
 // let addTodoButton = document.getElementById('addTodo');
 // let todocontainer= document.getElementById('toDocontainer');
 // let inputField = document.getElementById('inputfield');
@@ -33,9 +50,17 @@ function route(){
 //     paragraph.innerText=inputField.Value; 
 //     todocontainer.appendChild(paragraph);
 // })
+
 async function test(){
     let test = await fetchList();
     let test1 = route();
+    // console.log("Hello")
+    // let listi = getList()
+    // let fjoldi = listi.getLength;
+    // console.log(fjoldi)
+    // console.log(getList())
+    // console.log("goodbye")
+
 } 
 test()
 /*console.log(await getList());
