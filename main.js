@@ -1,4 +1,5 @@
 import { fetchList } from "./lib/todolist.js"
+import { el } from './lib/helpers.js';
 import { fetchAndRenderList, category } from "./lib/ui.js";
 
 
@@ -24,6 +25,25 @@ function route(){
     localStorage.removeItem("test");
     jsonstring = myStorage.getItem("test");
 }
+let addTodoButton = document.getElementById('addTodo');
+let todocontainer= document.getElementById('toDocontainer');
+
+
+addTodoButton.addEventListener('click', function(){
+    //var paragraph = document.createElement('p');
+    //paragraph.innerText=inputField.Value; 
+    //todocontainer.appendChild(paragraph);
+    console.log('hæ');
+    const addTask = el('form', el('p', 'Halló þetta er kúl'));
+    todocontainer.appendChild(addTask);
+
+    // Búa til form með nafni á vekefni, lýsingu, dagsetningu, flokkum og tags.
+    // Þarf að sækja flokka og tags úr localstorage til að birta rétta flokka
+    // Síðasta HTML element er takki sem "submittar" forminu. 
+    // Event listener á takkanum triggerar function sem save-ar gögn í localStorage.
+})
+
+=======
 // let addTodoButton = document.getElementById('addTodo');
 // let todocontainer= document.getElementById('toDocontainer');
 // let inputField = document.getElementById('inputfield');
