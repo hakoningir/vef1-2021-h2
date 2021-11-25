@@ -36,7 +36,9 @@ og með media query að ofan farið í 4rem í >=800px
 h1,
 h2,
 p {
-line-height: 1.5; }
+line-height: 1.5;
+font-weight: 400;
+}
 
 h2 {
 font-size: 2em;
@@ -72,22 +74,6 @@ h1{
     margin-right: -15px;
     margin-top: 3rem;
 }
-/*
-.valmynd{
-    display:flex;
-    flex-direction: column;
-    float:left;
-    
-    line-height: 2rem;
-}
-.yfirlit{
-    display:flex;
-    flex-direction: column;
-    float:center;
-    margin-right: 16rem;
-    line-height: 2rem;
-}*/
-
 
 /* Valmynd og Yfirlit */
 @media (min-width: 400px){
@@ -121,17 +107,17 @@ h1{
         grid-column: span 1;
     }
 }
-/*#addTodo{
-
-  border: none;
-  color: black;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  border-radius: 50%;
+.toDoItem__radio{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin:2rem;
+    padding:0;
+    line-height: 0.5rem;
+    border-bottom: 0.01rem solid lightgray;
+}
+.toDoItem__input{
+    float:left;
 }
 
 /* Valmynd */
