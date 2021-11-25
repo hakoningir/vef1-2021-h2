@@ -161,7 +161,7 @@ header h1{
     align-items: left;
     margin:2rem;
     padding:0;
-    line-height: 0.5rem;
+    line-height: 1rem;
     border-bottom: 0.01rem solid lightgray;
 }
 .toDoItem__input{
