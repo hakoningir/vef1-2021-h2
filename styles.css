@@ -1,13 +1,56 @@
-html {
-    box-sizing: border-box; }
-  
-*, *::before, *::after {
-    box-sizing: inherit;
+@charset "UTF-8";
+/* Grunn bilið okkar er 1rem == 16px */
+/* Hámarksbreidd á efni */
+/* Letur stillingar */
+/* Grid stillingar */
+:root{
+    /*Grunn bilið okkar er... (t.d.1rem ==16px*/
+    --spacing: 1rem;
+    /*Hámarksbreidd á efni */
+    --max-width: 1000px;
+    --color-text: #222;
+    --color-text-secondary: #222;
+    --color-link:#069;
+    --coor-border:#ccc;
+    /*Letur stillingar*/
+    --font-size: 16px;
+    --font-family-base: "Inter", helvetica, arial, sans-serif;
+    --font-family-heading: "Playfair Display", georgia, serif;
+    /*Grid stillingar*/
+    --columns: 12;
+    --gutter:30px;
+    --offset:20px;
+
+}
+
+/* Setjum inn "reset" sem fjarlægir margin og paddingaf öllu*/
+*{
     margin: 0;
-    padding: 0; }
+    padding: 0;
+}
+
+/*Reiknum stærð á öllum boxum sem border-box*/
+html {
+    box-sizing: border-box; 
+}
+
+/*og látum erfast á allt*/
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
   
 body {
-font-family:'Courier New', Courier, monospace;
+    font-family:"Courier New", Courier, monospace;
+    /*font-family: "Inter", helvetica, arial, sans-serif;*/
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 1rem;
+}
+
+
+/*font-family:'Courier New', Courier, monospace;
 margin-left: 10px;
 margin-right: 10px; }
 
@@ -38,14 +81,21 @@ h2,
 p {
 line-height: 1.5;
 font-weight: 400;
+=======
+    font-family:"Courier New", Courier, monospace;
+/*
+    font-family: "Playfair Display", georgia, serif;*/
 }
 
 h2 {
 font-size: 2em;
-margin-bottom: 0.5em; }
+margin-bottom: 0.5em; 
+}
+
 @media (max-width: 799px) {
     h2 {
-    font-size: 1.75em; } 
+        font-size: 1.75em; 
+    } 
 }
 
 .wrapper {
@@ -55,7 +105,7 @@ margin-bottom: 0.5em; }
     grid-template-rows: auto;    
     margin: 0 auto;
     width: calc(100% - (2 * 20px));
-    max-width: 1400px;
+    max-width: 1000px;
 }
 
 main{
@@ -67,11 +117,9 @@ main{
     margin-bottom: 30px;
 }
 
-h1{
+header h1{
     display: block;
     text-align: center;
-    margin-left: -15px;
-    margin-right: -15px;
     margin-top: 3rem;
 }
 
