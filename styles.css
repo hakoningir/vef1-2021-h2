@@ -86,7 +86,7 @@ p {
 
 h2 {
 font-size: 2em;
-margin-bottom: 0.5em; 
+/*margin-bottom: 0.5em; */
 }
 
 @media (max-width: 799px) {
