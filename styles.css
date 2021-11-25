@@ -121,6 +121,7 @@ header h1{
     display: block;
     text-align: center;
     margin-top: 3rem;
+    font-weight: 700;
 }
 
 /* Valmynd og Yfirlit */
@@ -167,7 +168,21 @@ header h1{
 .toDoItem__input{
     float:left;
 }
-
+.toDoItem__span{
+    background-color:lightgray;
+    border: 0.07rem solid gray;
+    margin:0.2rem;
+    color: black;
+    border-radius: 0.313rem;
+    font-weight: 500;
+}
+.valmynd{
+    font-weight: 600;
+}
+.toDoItem__inner{
+    display: flex;
+    flex-direction: row;
+}
 /* Valmynd */
 .valmynd-efni-svaedi{
     display: flex;
