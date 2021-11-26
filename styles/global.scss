@@ -1,4 +1,46 @@
-/* box-sizing: inherit;
-margin: 0;
-padding: 0;
-*/
+/* Setjum inn "reset" sem fjarlægir margin og paddingaf öllu*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Reiknum stærð á öllum boxum sem border-box*/
+html {
+    box-sizing: border-box; 
+}
+
+/*og látum erfast á allt*/
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+  
+body {
+    font-family:"Courier New", Courier, monospace;
+    /*font-family: "Inter", helvetica, arial, sans-serif;*/
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 1rem;
+}
+h1,
+h2,
+p {
+line-height: 1.5;
+font-weight: 400;
+    font-family:"Courier New", Courier, monospace;
+/*
+    font-family: "Playfair Display", georgia, serif;*/
+}
+
+h2 {
+font-size: 2em;
+/*margin-bottom: 0.5em; */
+}
+
+
+@media (max-width: 799px) {
+    h2 {
+        font-size: 1.75em; 
+    } 
+}

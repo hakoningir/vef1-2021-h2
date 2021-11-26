@@ -79,12 +79,12 @@ og með media query að ofan farið í 4rem í >=800px
     }
   }
     */
+
 h1,
 h2,
 p {
 line-height: 1.5;
 font-weight: 400;
-
 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 font-style:italic;
 /*
@@ -156,7 +156,6 @@ header h1{
     }
     .valmynd-efni{
         display: grid;
-        gap: 10px;
         grid-template-columns: repeat(1,1fr);
     }
     .valmynd-efni-svaedi{
@@ -206,8 +205,39 @@ header h1{
     }
 }
 /* Valmynd */
-.valmynd-efni-svaedi{
+
+.valmynd-efni{
+    margin-bottom: 2rem;
+}
+
+.valmynd-efni-svaedi {
     display: flex;
     justify-content: space-between;
-}
+    /*flex-direction: column;
+    margin-bottom: 30px;*/
+    /* Lætur sjálfvirki grid útreikninga hanga innan grid, samt ekki ideal */
+    overflow: hidden;
+  }
+  
+  @media (min-width: 1000px) {
+    /* þurfum ekki bil þegar allt er í línu */
+    /* samt eiginlega layout mál! */
+    .valmynd-efni-svaedi{
+        margin-bottom: 0;
+    }
+  }
+  .valmynd-efni-svaedi:last-child {
+    padding-right: 0;
+  }
+  
+  .valmynd-efni-svaedi h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .valmynd-efni-svaedi p {
+    /* látum textann fá auka pláss, ýtir fyrirsögn efst og dags í botn */
+    /*flex: 1;*/
+    margin-bottom: 1rem;
+  }
+
 /* Yfirlit*/

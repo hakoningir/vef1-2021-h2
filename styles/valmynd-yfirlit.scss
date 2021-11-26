@@ -1,0 +1,97 @@
+
+/* Valmynd og Yfirlit */
+@media (min-width: 400px){
+    .valmynd-yfirlit{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+    }
+    .valmynd{
+        grid-column: 1/span 3;
+    }
+    .yfirlit{
+        grid-column: 6/span 3;
+    }
+}
+
+@media (min-width: 1000px){
+    .valmynd{
+        grid-column: 1/span 4;
+    }
+    .yfirlit{
+        grid-column: 5/span 4;
+    }
+    .valmynd-efni{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .valmynd-efni-svaedi{
+        grid-column: span 1;
+    }
+}
+
+.toDoItem__radio{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin:2rem;
+    padding:0;
+    line-height: 1rem;
+    border-bottom: 0.01rem solid lightgray;
+}
+.toDoItem__input{
+    float:left;
+}
+.toDoItem__span{
+    background-color:lightgray;
+    border: 0.07rem solid gray;
+    margin:0.2rem;
+    color: black;
+    border-radius: 0.313rem;
+    font-weight: 500;
+}
+.valmynd{
+    font-weight: 600;
+}
+.toDoItem__inner{
+    display: flex;
+    flex-direction: row;
+}
+/* Valmynd */
+
+.valmynd-efni{
+    margin-bottom: 2rem;
+}
+
+.valmynd-efni-svaedi {
+    display: flex;
+    justify-content: space-between;
+    /*flex-direction: column;
+    margin-bottom: 30px;*/
+    /* Lætur sjálfvirki grid útreikninga hanga innan grid, samt ekki ideal */
+    overflow: hidden;
+  }
+  
+  @media (min-width: 1000px) {
+    /* þurfum ekki bil þegar allt er í línu */
+    /* samt eiginlega layout mál! */
+    .valmynd-efni-svaedi{
+        margin-bottom: 0;
+    }
+  }
+  .valmynd-efni-svaedi:last-child {
+    padding-right: 0;
+  }
+  
+  .valmynd-efni-svaedi h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .valmynd-efni-svaedi p {
+    /* látum textann fá auka pláss, ýtir fyrirsögn efst og dags í botn */
+    /*flex: 1;*/
+    margin-bottom: 1rem;
+  }
+
+/* Yfirlit*/
