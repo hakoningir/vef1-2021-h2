@@ -32,7 +32,7 @@ addTodoButton.addEventListener('click', function(){
     //paragraph.innerText=inputField.Value; 
     //todocontainer.appendChild(paragraph);
     console.log('hæ');
-    const addTask = el('form', el('p', 'Epstein drap ekki sjálfan sig'));
+    const addTask = el('form', el('p', 'Það þarf að koma nýtt task'));
     todocontainer.appendChild(addTask);
 
     // Búa til form með nafni á vekefni, lýsingu, dagsetningu, flokkum og tags.
