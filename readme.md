@@ -177,3 +177,48 @@ Sett verða fyrir tíu minni verkefni þar sem átta bestu gilda 5% hvert, samta
 Sett verða fyrir tvö hópverkefni þar sem hvort um sig gildir 10%, samtals 20% af lokaeinkunn.
 
 > Útgáfa 0.1
+
+
+README.md skrá skal vera í rót verkefnis og innihalda:
+
+Upplýsingar um hvernig keyra skuli verkefnið
+  npm run dev skal annaðhvort að vera til staðar
+  npm run lint skal vera til staðar og keyra lintera
+
+  uuuu má ég sjá gamla verkefnið þitt Daníel? :P
+
+/* Lýsingu á uppsetningu verkefnis, hvernig því er skipt í möppur, hvernig CSS/Sass er skipulagt og fleira sem á við */ 
+
+Ég ekki skilja 
+
+/* Upplýsingar um alla sem unnu verkefni, nöfn, HÍ notendanöfn og GitHub notendanöfn */ done
+
+# Vefforritun 1, 2021: Hópverkefni 2
+
+## Lýsing
+
+Verkefnið fólst í því að gera "TODO vefforrit" sem geymir stöðu í vafra notanda. 
+
+Að vanda er að finna index.html í rót verkefnisins sem er inngangur síðunnar þegar verkefnið er keyrt. Við index.html er tengd Javascript skráin "main.js" sem sér um helstu virkni síðunnar. Í "main.js" er notast við Javascript skrár úr lib möppunni til að brjóta niður virknina.
+json shit 
+
+## Sass
+
+Notast var við Sass fyrir stíla. Þeim var skipt upp í skrár sem er sjá má í styles möppunni. Í rót verkefnisins er að finna styles.scss skrá sem importar þessum skrám. Sú skrá er síðan þýdd yfir í styles.css skrá í rót verkefnisins sem loks er tengd við index.html.
+npm run lint keyrir stylelint á sass skrár sem finna má í styles möppunni.
+
+## Keyrsla
+
+Til þess að keyra verkefnið þarf fyrst að velja staðsetningu fyrir möppu verkefnisins. Því næst er git clone https://github.com/hakoningir/vef1-2021-h2 keyrt. Þá verður vef1-2021-h2 mappan til. Farið er inn í þá skrá og npm install keyrt. Það hleður niður þeim dependencies sem þurfa að vera til staðar í verkefninu. Svo er "npm run dev" keyrt í möppunni til að keyra síðuna. 
+
+ 
+
+## Verkefnið var unnið af:
+  Hákon Ingi Rafnsson, hí notendanafn: hir12, github notendanafn: hakoningir
+
+  Kristín Lísa Friðriksdóttir, hí notendanafn: klf5, github notendanafn: Stina13
+
+  Michael Þór Sverrisson, hí notendanafn: mts6 , github notendanafn: MichaelSverrisson
+
+  Svana Björg Birgisdóttir, hí notendanafn: sbb51, github notendanafn: SvanaBjorg
+  
