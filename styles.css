@@ -42,28 +42,61 @@ html {
 }
   
 body {
-    font-family:"Courier New", Courier, monospace;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /*font-family: "Inter", helvetica, arial, sans-serif;*/
     font-size: 16px;
     line-height: 1.5;
     padding-top: 1rem;
+    font-style:italic;
+    background-color:ghostwhite;
 }
 
+
+
+/*font-family:'Courier New', Courier, monospace;
+margin-left: 10px;
+margin-right: 10px; }
+
+header h1 {
+    font-size: 1rem;
+    line-height: 1;
+    font-variation-settings: 'wght' 600;
+}
+@media (min-width: 1000px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+/*
+ef vafri styður clamp, notum það til að skala línulega, annars er 2rem <800px
+og með media query að ofan farið í 4rem í >=800px
+*/
+/*
+@supports (font-size: 2rem) {
+    header h1 {
+      font-size: clamp(2rem, 16px + 4vw, 4rem);
+    }
+  }
+    */
 
 h1,
 h2,
 p {
 line-height: 1.5;
 font-weight: 400;
-    font-family:"Courier New", Courier, monospace;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style:italic;
 /*
     font-family: "Playfair Display", georgia, serif;*/
 }
+
 
 h2 {
 font-size: 2em;
 /*margin-bottom: 0.5em; */
 }
+
 
 @media (max-width: 799px) {
     h2 {
@@ -111,6 +144,7 @@ header h1{
     .yfirlit{
         grid-column: 6/span 3;
     }
+    
 }
 
 @media (min-width: 1000px){
@@ -127,33 +161,48 @@ header h1{
     .valmynd-efni-svaedi{
         grid-column: span 1;
     }
-}
-.toDoItem__radio{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin:2rem;
-    padding:0;
-    line-height: 1rem;
-    border-bottom: 0.01rem solid lightgray;
-}
-.toDoItem__input{
-    float:left;
-}
-.toDoItem__span{
-    background-color:lightgray;
-    border: 0.07rem solid gray;
-    margin:0.2rem;
-    color: black;
-    border-radius: 0.313rem;
-    font-weight: 500;
-}
-.valmynd{
-    font-weight: 600;
-}
-.toDoItem__inner{
-    display: flex;
-    flex-direction: row;
+    h1{
+        font-size: 3em;
+        color:#00457c;
+    }
+    .toDoItem{
+        border-style:solid;
+        border-radius: 2rem;
+        width:28rem;
+        margin: 1rem;
+        background-color: #fff;
+    }
+    .toDoItem__radio{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin:2rem;
+        padding:0;
+        line-height: 1.5rem;
+        /*border-bottom: 0.01rem solid lightgray;*/
+    }
+    .toDoItem__input{
+        float:left;
+        height: 4.5rem;
+        width: 1.2rem;
+        margin:0.5rem;
+    }
+    .toDoItem__span{
+        background-color:whitesmoke;
+        border: 0.07rem solid gray;
+        margin:0.2rem;
+        color: black;
+        border-radius: 0.313rem;
+        font-weight: 500;
+        line-height: 1.2rem;
+    }
+    .valmynd{
+        font-weight: 600;
+    }
+    .toDoItem__inner{
+        display: flex;
+        flex-direction: row;
+    }
 }
 /* Valmynd */
 
