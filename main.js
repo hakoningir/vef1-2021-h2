@@ -1,5 +1,5 @@
 import { fetchList, getList } from "./lib/todolist.js"
-import { fetchAndRender, fetchAndRenderList } from "./lib/ui.js";
+import { fetchAndRender, fetchAndRenderList, create } from "./lib/ui.js";
 import { el } from './lib/helpers.js';
 
 
@@ -25,7 +25,7 @@ function route(){
 }
 let addTodoButton = document.getElementById('addTodo');
 let todocontainer= document.getElementById('toDocontainer');
-
+create()
 
 addTodoButton.addEventListener('click', function(){
     //var paragraph = document.createElement('p');
