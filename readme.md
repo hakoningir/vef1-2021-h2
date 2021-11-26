@@ -200,7 +200,7 @@ Upplýsingar um hvernig keyra skuli verkefnið
 Verkefnið fólst í því að gera "TODO vefforrit" sem geymir stöðu í vafra notanda. 
 
 Að vanda er að finna index.html í rót verkefnisins sem er inngangur síðunnar þegar verkefnið er keyrt. Við index.html er tengd Javascript skráin "main.js" sem sér um helstu virkni síðunnar. Í "main.js" er notast við Javascript skrár úr lib möppunni til að brjóta niður virknina.
-json shit 
+Í rótinni er loks að finna þær json skrár sem notast er við, data.json skránna sem gefin var og heldur utan um gögn sem verkefnið byggir á, auk package- og package-lock.json sem halda utan um öll notuð tól.
 
 ## Sass
 
