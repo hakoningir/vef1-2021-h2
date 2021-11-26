@@ -149,7 +149,7 @@ header h1{
     }
     .valmynd-efni{
         display: grid;
-        gap: 30px;
+        gap: 10px;
         grid-template-columns: repeat(1,1fr);
     }
     .valmynd-efni-svaedi{
