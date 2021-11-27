@@ -34,6 +34,7 @@ addTodoButton.addEventListener('click', function(){
     console.log('hæ');
     const addTask = el('form', el('p', 'Það þarf að koma nýtt task'));
     todocontainer.appendChild(addTask);
+    
 
     // Búa til form með nafni á vekefni, lýsingu, dagsetningu, flokkum og tags.
     // Þarf að sækja flokka og tags úr localstorage til að birta rétta flokka
